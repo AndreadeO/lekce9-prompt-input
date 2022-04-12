@@ -1,6 +1,6 @@
-let sirkaPracky = prompt('Zadej sirku pracky v centimetrech:');
-let vyskaPracky = prompt('Zadej vysku pracky v centimetrech:');
-let hloubkaPracky = prompt('Zadej hloubku pracky v centimetrech:');
+let sirkaPracky = Number(prompt('Zadej sirku pracky v centimetrech:'));
+let vyskaPracky = parseInt(prompt('Zadej vysku pracky v centimetrech:'));
+let hloubkaPracky = parseInt(prompt('Zadej hloubku pracky v centimetrech:'));
 
 const sirka = 62;
 const vyska = 70;
@@ -11,3 +11,4 @@ if (sirkaPracky < sirka && vyskaPracky < vyska && hloubkaPracky < hloubka) {
 } else {
     alert('Bohuzel nemas na pracku misto:-(');
 }
+console.log(typeof sirkaPracky);
